@@ -8,7 +8,7 @@ You have ingredients: salad, cheese, tomato, bread, ham, fish… that you can co
 
 Each ingredient can be described by its diet compatibilities: vegan, vegetarian, or pescetarian, its production conditions: organic or not, and has its own nutrition facts : calories, fat, salt and carbohydrates amounts (and many more). There are additional food items like drinks and deserts which can help create a meal together with a panini.
 
-We want to derive the nutrition facts of any kind of Panini and for any meal meals built from these ingredients and food items.
+We want to derive the nutrition facts of any kind of Panini and for any meal built from these ingredients and food items.
 
  
 
