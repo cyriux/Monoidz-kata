@@ -37,12 +37,12 @@ In practice, monoids enable an arithmetic style, à la Object + Object = Object.
  
 # Extend!
 
-Now we want to calculate more facts:
+Now we want to go further (depending on the time you have and your audacity):
 
-- the nutrition numbers in percent of the weight
-- daily nutrition ratios
-- ingredients list for paninis and meals
-- allergy risks warnings for paninis and meals
+- Express the nutrition numbers in percent of the weight
+- Calculate the average diet compatibilities & nutrition facts over millions of various meals served over a year
+- Check if a meal is locally produced (all ingredient producers are located within 100 kms)
+- Given millions of meals and their facts already calculated, how to fix them when you find out one particular meal was wrong?
 
-How easy can you extend the design to cope with these changes? Discuss and compare to other approaches.
+How easily can you extend the design to cope with these changes? Discuss and compare to other approaches.
 
