@@ -2,25 +2,27 @@
 
 *by Cyrille Martraire, based on the Kebab kata from Romeu Moura*
 
-Let’s talk about food, from a nutrition facts perspective.
+Let’s talk about food, from the perspective of **diet compatibilities** & **nutrition facts**.
 
-You have ingredients: salad, cheese, tomato, bread, ham, fish… that you can combine in order to make a delicious Panini.
+You have **ingredients**: salad, cheese, tomato, bread, ham, fish… that you can combine in order to make a delicious **Panini**.
 
-Each ingredient can be described by its diet compatibilities: vegan, vegetarian, or pescetarian, its production conditions: organic or not, and has its own nutrition facts : calories, fat, salt and carbohydrates amounts (and many more). There are additional food items like drinks and deserts which can help create a meal together with a panini.
+Each ingredient can be described by its diet compatibilities: vegan, vegetarian, or pescetarian, whether it's organic or not, and it has its own nutrition facts : calories, fat, salt and carbohydrates amounts (and many more). T
 
-We want to derive the nutrition facts of any kind of Panini and for any meal built from these ingredients and food items.
+here are additional food items like drinks and deserts which can help create a meal together with a panini.
 
- 
+We want to derive the diet compatibilities & nutrition facts of any kind of Panini and for any meal built from these ingredients and food items.
+
 
 # Initial exploration
 
-Salad is vegan, vegetarian, and pescetarian. It’s organic. Its nutrition facts are fat:0, salt:0, calories: 50.
-Cheese is not vegan, vegetarian, and pescetarian. It’s not organic. Its nutrition facts are fat:80, salt:0, calories: 20000.
-Bread is vegan, vegetarian, and pescetarian. It’s organic. Its nutrition facts are fat:2, salt:0.2, calories: 100000.
-Ham is not vegan, not vegetarian, and not pescetarian. It’s not organic. Its nutrition facts are fat:150, salt:0.1, calories: 30000.
+Here are sample data:
 
-1. Start coding 2 ingredients, test-first (not TDD), in exploration mode
-1. Propose and discuss a way to code the calculation of the nutrition facts for a simple Panini.
+- Salad is vegan, vegetarian, and pescetarian. It’s organic. Its nutrition facts are fat:0, salt:0, calories: 50.
+- Cheese is not vegan, but is vegetarian and pescetarian. It’s not organic. Its nutrition facts are fat:80, salt:0, calories: 20000.
+- Bread is vegan, vegetarian, and pescetarian. It’s organic. Its nutrition facts are fat:2, salt:0.2, calories: 100000.
+- Ham is not vegan, not vegetarian, and not pescetarian. It’s not organic. Its nutrition facts are fat:150, salt:0.1, calories: 30000.
+
+1. Explore how to code the calculation of a panini with just 2 ingredients. You may do it test-first.
 1. Propose a refactoring towards a well-known design pattern.
 
 # The Monoid way
@@ -31,8 +33,7 @@ In practice, monoids enable an arithmetic style, à la Object + Object = Object.
 
 1. Ask for a demo with glasses of beer to understand the abstract idea in a concrete way.
 1. Discuss common examples of monoids that you know already.
-1. Try to turn the food example into a monoid fashion.
-1. Refactor the tests to simplify the assertions in a style: “assert C = A + B”
+1. Try to turn the food example into a monoid fashion, into this style of assertions: “assert C = A + B”
  
 # Extend!
 
