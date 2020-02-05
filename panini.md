@@ -42,7 +42,7 @@ Now we want to go further (depending on the time you have and your audacity):
 - Express the nutrition numbers in percent of the weight
 - Calculate the average diet compatibilities & nutrition facts over millions of various meals served over a year
 - Check if a meal is locally produced (all ingredient producers are located within 100 kms)
-- Given millions of meals and their facts already calculated, how to fix them when you find out one particular meal was wrong?
+- Given that the facts results are already calculated for millions of meals, how to fix the results when you find out one particular meal was wrong without recalculating it all?
 
 How easily can you extend the design to cope with these changes? Discuss and compare to other approaches.
 
