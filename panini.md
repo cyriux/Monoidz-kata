@@ -33,16 +33,16 @@ In practice, monoids enable an arithmetic style, à la Object + Object = Object.
 
 1. Ask for a demo with glasses of beer to understand the abstract idea in a concrete way.
 1. Discuss common examples of monoids that you know already.
-1. Try to turn the food example into a monoid fashion, into this style of assertions: “assert C = A + B”
+1. Turn the food example into a monoid fashion, into this style of assertions: “assert C = A + B”
  
 # Extend!
 
 Now we want to go further (depending on the time you have and your audacity):
 
-- Express the nutrition numbers in *percent of the weight*
-- Calculate the diet compatibilities *proportions* & *average* nutrition facts over millions of various meals served over a year
-- Check if a meal is locally produced (all ingredient producers are located *within 100 kms*)
-- Given that the facts results are already calculated for millions of meals, how to fix the results when you find out one particular meal was wrong *without recalculating it all*?
+- Express the nutrition numbers in **percent of the weight**
+- Calculate the diet compatibilities **proportions** & **average** nutrition facts over millions of various meals served over a year
+- Check if a meal is locally produced (all ingredient producers are located **within 100 kms**)
+- Given that the facts results are already calculated for millions of meals, how to fix the results when you find out one particular meal was wrong **without recalculating it all**?
 
 How easily can you extend the design to cope with these changes? Discuss and compare to other approaches.
 
