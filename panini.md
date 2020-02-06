@@ -34,6 +34,11 @@ In practice, monoids enable an arithmetic style, à la Object + Object = Object.
 1. Ask for a demo with glasses of beer to understand the abstract idea in a concrete way.
 1. Discuss common examples of monoids that you know already.
 1. Turn the food example into a monoid fashion, into this style of assertions: “assert C = A + B”
+
+## Resources: 
+
+- The paper on domain modeling with monoids: http://www.arolla.fr/blog/wp-content/uploads/2018/10/DomainModelingwithMonoids.pdf
+- Multiple examples of monoids implementations (Java): https://github.com/cyriux/MonoidsAllTheThings/tree/master/monoids/test/com/cyrillemartraire/monoids
  
 # Extend!
 
