@@ -31,7 +31,7 @@ Monoids are a ‘set’ and an ‘operation’ with specific properties: closure
 
 In practice, monoids enable an arithmetic style, à la Object + Object = Object.
 
-1. Ask for a demo with glasses of beer to understand the abstract idea in a concrete way.
+1. Ask for a demo with glasses of beer to understand the abstract idea in a concrete way. Or watch the beginning of a video of one my related talks: https://www.youtube.com/watch?v=J9UwWo2qifg
 1. Discuss common examples of monoids that you know already.
 1. Turn the food example into a monoid fashion, into this style of assertions: “assert C = A + B”
 
