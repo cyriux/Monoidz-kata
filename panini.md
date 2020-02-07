@@ -52,3 +52,5 @@ Now we want to go further (depending on the time you have and your audacity):
 
 How easily can you extend the design to cope with these changes? Discuss and compare to other approaches.
 
+*Don't hesitate to ping me https://twitter.com/cyriux for feedback or questions*
+
