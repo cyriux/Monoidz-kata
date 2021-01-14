@@ -96,12 +96,15 @@ And we know these properties really hold because we have automated tests that co
 Of course our example is very minimal, in two ways:
 
 1. **Trival Monoid example**: The class considered is so trivial we don't see much benefits of monoids so far; expanding the business into more complicated behavior would exhibit the benfits more visibly.
-1. **Poor-Man PBT Tooling**: The randomness in the tests is managed by hand, only one case at a time, the tests don't strictly conform to what "unit tests" should be, so it's all a very limited form of property-based testing; Moving to specialized PBT tools offer the convenience of more readable code, testing multiple cases at each run, and would feature the very nice "shrinking" capability to better interpret what's happening whenever a property is not verified for some values.
+1. **Poor-Man PBT Tooling**: The randomness in the tests is managed by hand, only one case at a time, the tests don't strictly conform to what "unit tests" should be, so it's all a very limited form of property-based testing; Moving to specialized PBT tools offer the convenience of more readable code, testing multiple cases on each run, and would feature the very nice "shrinking" capability to better interpret what's happening whenever a property is not verified for some values.
 
 In the following steps we can explore and expand both directions (more complicated domain behavior, or/hand using PBT tools) at your wish.
 
+## Further steps into using serious PBT tools
 
-## Further Steps 
+A bootstrap for Js by [Mathieu](https://twitter.com/meveillard) is available here: https://github.com/mathieueveillard/js-kata-starter-pbt
+
+## Further Steps into more interesting monoids
 
 **without changing any of the 3 existing automated property tests** to stay with a monoid! 
 
