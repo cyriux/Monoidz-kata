@@ -2,7 +2,7 @@
 
 ## The problem
 
-Consider simple stock management domain, with similar goods (items) in multiple warehouses.
+Consider a simple stock management domain, with similar goods (items) in multiple warehouses.
 
 For a given item to be ordered, its stock across 2 warehouses is the sum of its stock in each warehouse:
 
@@ -152,3 +152,9 @@ public static class Stock {
 	}
 }
 ```
+
+# Further nice reading
+
+As part of a great series on PBT, very extensive material: 
+https://blog.johanneslink.net/2018/07/16/patterns-to-find-properties/
+
