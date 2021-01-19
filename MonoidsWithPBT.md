@@ -23,7 +23,7 @@ Let's make that into one simple unit test on some hardcoded example values:
 
 ## Closure of Operations
 
-If we generalize the previous assertion we can define an interesting property called the Closure of the Operation in the DDD book: "The type method signatures are all about the type itself as parameters and retur types, and nothing else but primitives". 
+If we generalize the previous assertion we can define an interesting property called the Closure of the Operation in the DDD book: "The type method signatures are all about the type itself as parameters and return types, and nothing else but primitives". 
 
 Another way to express that property is "given any 2 values (instances) of the type, combining them still gives us an instance of that type". Let's make this property explicit in another dedicated automated test, using random values (instances):
 
@@ -35,8 +35,8 @@ Another way to express that property is "given any 2 values (instances) of the t
 		assertTrue(a.combine(b) instanceof Stock);
 	}
 	
-	private final static Stock forAnyStock() {
-		return new Stock((int) Math.random() * 100); // stock from 0 to 100
+	private static Stock forAnyStock() {
+		return new Stock((int) (Math.random() * 100)); // stock from 0 to 100
 	}
 ```
 
