@@ -36,7 +36,7 @@ public void closureOfOperation() {
 }
 
 private final static Stock forAnyStock() {
-  return new Stock((int) Math.random() * 100); // stock from 0 to 100
+  return new Stock((int) (Math.random() * 100)); // stock from 0 to 100
 }
 ```
 
