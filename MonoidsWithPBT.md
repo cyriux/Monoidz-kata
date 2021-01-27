@@ -23,7 +23,7 @@ public void theTotalStockIsTheSumOfEachStocks() {
 
 ### YOUR TASK: make this test pass by creating the simplest Stock class (constructor, equals, hashcode and toString for our own convenience)
 
-If we generalize the previous assertion we can define an interesting property called the Closure of the Operation in the DDD book: "The type method signatures are all about the type itself as parameters and retur types, and nothing else but primitives".
+If we generalize the previous assertion we can define an interesting property called the Closure of the Operation in the DDD book: "The type method signatures are all about the type itself as parameters and return types, and nothing else but primitives".
 
 Another way to express that property is "given any 2 values (instances) of the type, combining them still gives us an instance of that type". Let's make this property explicit in another dedicated automated test, using random values (instances):
 
