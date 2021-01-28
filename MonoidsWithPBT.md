@@ -118,8 +118,12 @@ Pick the proper setup and refactor your tests!
 **Without changing any of the 3 existing tests**, enrich the domain with the following features. Think "how can I turn this into a monoid?"
 
 - keep track of the minimal stock across all combined stocks
-- keep track of the average stock (and standard deviation of the stock) across all the combined stocks
+- keep track of the average stock (and standard deviation of the stock) across all the combined stocks (\*)
 - manage more than one item, by having stocks of multiple items
+
+(\*) For this, you'll want to use the following formula of standard deviation:
+
+![Standard Deviation](resources/StandardDeviation.jpg "Standard Deviation")
 
 ## The monoid implementation (spoiler of the first step of the exercise)
 
