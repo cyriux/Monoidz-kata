@@ -106,10 +106,11 @@ In the following steps we can explore and expand both directions (more complicat
 
 PBT being a well established testing practice, libraries exist in each mainstream environment:
 
-- [Java]() => You have the choice, you could consider JUnitQuickcheck: https://github.com/pholser/junit-quickcheck
-- [NET]() => TO DO
+- [Java](https://github.com/cyriux/java-kata-starter-pbt) using JUnitQuickcheck: https://github.com/pholser/junit-quickcheck (but feel free to use an alternative PBT tool)
 - [JS/TS](https://github.com/mathieueveillard/js-kata-starter-pbt)
 - [Python](https://github.com/mathieueveillard/py-kata-starter-pbt)
+- [NET]() => TO DO
+
 
 Pick the proper setup and refactor your tests!
 
