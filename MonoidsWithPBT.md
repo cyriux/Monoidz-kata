@@ -100,24 +100,27 @@ Of course our example is very minimal, in two ways:
 1. **Trival Monoid example**: The class considered is so trivial we don't see much benefits of monoids so far; expanding the business into more complicated behavior would exhibit the benfits more visibly.
 1. **Poor-Man PBT Tooling**: The randomness in the tests is managed by hand, only one case at a time, the tests don't strictly conform to what "unit tests" should be, so it's all a very limited form of property-based testing; Moving to specialized PBT tools offer the convenience of more readable code, testing multiple cases on each run, and would feature the very nice "shrinking" capability to better interpret what's happening whenever a property is not verified for some values.
 
-In the following steps we can explore and expand both directions (more complicated domain behavior, or/hand using PBT tools) at your wish. Feel free to jump directly to Part III if you're not interested in part II.
+In the following steps we can explore and expand both directions (more complicated domain behavior, or/hand using PBT tools) at your wish. Feel free to jump directly to Part III if you're not interested or don't want to spend too much time right now in part II.
 
 ## Part II: further steps into using serious PBT tools
 
 PBT being a well established testing practice, libraries exist in each mainstream environment:
 
+
+- [Java](https://github.com/cyriux/java-kata-starter-pbt) using JUnitQuickcheck: https://github.com/pholser/junit-quickcheck (but feel free to use an alternative PBT tool
 - [JS/TS](https://github.com/mathieueveillard/js-kata-starter-pbt)
 - [Python](https://github.com/mathieueveillard/py-kata-starter-pbt)
+
 
 Pick the proper setup and refactor your tests!
 
 ## Part III: further steps into more interesting monoids
 
-**Without changing any of the 3 existing tests**, enrich the domain with the following features. Think "how can I turn this into a monoid?"
+**Without changing any of the 3 existing property tests**, enrich the domain with the following features. Think "how can I turn this into a monoid?". You may still add regular unit tests, or duplicate the 3 property tests for each new class you may introduce.
 
-- keep track of the minimal stock across all combined stocks
-- keep track of the average stock (and standard deviation of the stock) across all the combined stocks (\*)
-- manage more than one item, by having stocks of multiple items
+1. keep track of the minimal stock across all combined stocks
+2. keep track of the average stock (and standard deviation of the stock) across all the combined stocks (\*)
+3. manage more than one item, by having stocks of multiple items; You may want to start with just two items as an intermediate step
 
 (\*) For this, you'll want to use the following formula of standard deviation:
 
@@ -136,3 +139,6 @@ Pick the proper setup and refactor your tests!
 
 As part of a great series on PBT, very extensive material:
 https://blog.johanneslink.net/2018/07/16/patterns-to-find-properties/
+
+To start PBT using JUnitQuickCheck, these two blog posts from Kenny are precise and useful: https://baasie.com/2017/05/03/property-based-testing-in-java-with-junit-quickcheck-part-1-the-basics
+
