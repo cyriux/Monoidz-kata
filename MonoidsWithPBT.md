@@ -106,10 +106,10 @@ In the following steps we can explore and expand both directions (more complicat
 
 PBT being a well established testing practice, libraries exist in each mainstream environment:
 
-- [Java](https://github.com/cyriux/java-kata-starter-pbt) using JUnitQuickcheck: https://github.com/pholser/junit-quickcheck (but feel free to use an alternative PBT tool)
+
+- [Java](https://github.com/cyriux/java-kata-starter-pbt) using JUnitQuickcheck: https://github.com/pholser/junit-quickcheck (but feel free to use an alternative PBT tool
 - [JS/TS](https://github.com/mathieueveillard/js-kata-starter-pbt)
 - [Python](https://github.com/mathieueveillard/py-kata-starter-pbt)
-- [NET]() => TO DO
 
 
 Pick the proper setup and refactor your tests!
@@ -126,42 +126,14 @@ Pick the proper setup and refactor your tests!
 
 ![Standard Deviation](resources/StandardDeviation.jpg "Standard Deviation")
 
-## The monoid implementation (spoiler of the first step of the exercise)
+## Monoids explained with pancakes
 
-```java
-public static class Stock {
+[Slides](https://docs.google.com/presentation/d/1EvMZesAipzA9M7qBxKDMigYUfGv9Ny78FffeyO9hMng/edit?usp=sharing)
 
-  public static final Stock NEUTRAL = new Stock(0);
+## Some possible implementations
 
-  private final int quantity;
-
-  public Stock(int quantity) {
-    this.quantity = quantity;
-  }
-
-  public Stock combine(Stock other) {
-    return new Stock(quantity + other.quantity);
-  }
-
-  @Override
-  public int hashCode() {
-    return quantity ^ 31;
-  }
-
-  @Override
-  public boolean equals(Object obj) {
-    if (this == obj)
-      return true;
-    final Stock other = (Stock) obj;
-    return quantity == other.quantity;
-  }
-
-  @Override
-  public String toString() {
-    return "" + quantity;
-  }
-}
-```
+- [In Java, by @cyriux](https://github.com/cyriux/monoids-with-PBT-java)
+- [In JS/TS, by @mathieueveillard](https://github.com/mathieueveillard/monoids-with-pbt)
 
 ## Further reading
 
